@@ -1,4 +1,4 @@
-# generator-dataminr-react
+# generator-dataminr-react-flux
 
 > [Yeoman](http://yeoman.io) generator for Facebook's React framework and Flux application architecture.
 
@@ -28,17 +28,17 @@ or PowerShell to improve the experience.
 
 ### Install and use Generators
 
-To install generator-dataminr-react from npm, run:
+To install generator-dataminr-react-flux from npm, run:
 
 ```
-$ npm install -g generator-dataminr-react
+$ npm install -g generator-dataminr-react-flux
 ```
 
 Finally, initiate the generator:
 
 ```
 $ cd ~/path/to/project/root
-$ yo dataminr-react
+$ yo dataminr-react-flux
 ```
 
 NPM Troubles? npm ERR! Are you seeing something like: `Error: EACCES, mkdir '/Users/user/.npm/dargs/2.1.0'` ?
