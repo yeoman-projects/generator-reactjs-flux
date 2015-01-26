@@ -1,0 +1,35 @@
+{
+    "name": "generator-dataminr-react-flux",
+    "version": "0.1.0",
+    "description": "React, Flux, Sass, Require, Grunt, Jasmine, Istanbul, JSHint and JSCS all wired up and ready to go.",
+    "keywords": [
+        "yeoman-generator"
+    ],
+    "main": "app/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git@git.dataminr.com:frontend-team/generator-dataminr-react-flux.git"
+    },
+    "dependencies": {
+        "yeoman-generator": "~0.16.0",
+        "chalk": "~0.4.0"
+    },
+    "devDependencies": {
+
+    },
+    "peerDependencies": {
+        "yo": ">=1.0.0"
+    },
+    "engines": {
+        "node": ">=0.10.0",
+        "npm": ">=1.2.10"
+    },
+    "licenses": [
+        {
+            "type": "MIT"
+        }
+    ],
+    "files": [
+        "app"
+    ]
+}
