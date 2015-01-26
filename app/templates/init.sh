@@ -9,8 +9,8 @@ COLOR_RESET="\x1b[0m"
 rm -rf bower_components
 rm -rf node_modules
 rm -rf coverage
-rm -rf reveal/public/compiled
-rm -rf reveal/public/dist
+rm -rf app/compiled
+rm -rf app/dist
 npm cache clean
 bower cache clean
 npm install --loglevel error
