@@ -28,10 +28,10 @@ or PowerShell to improve the experience.
 
 ### Install and use Generators
 
-To install generator-dataminr-react-flux from npm, run:
+To install generator-dataminr-react-flux, clone this repo, and run the following command from the root directory:
 
 ```
-$ npm install -g generator-dataminr-react-flux
+$ npm link
 ```
 
 Finally, initiate the generator:
