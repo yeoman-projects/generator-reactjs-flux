@@ -20,7 +20,7 @@
 ### Install Yeoman
 
 ```
-$ npm install -g yo
+$ npm install -g yo grunt-cli react-tools
 ```
 
 On Windows, we suggest you use an improved command line tool such as [cmder](http://bliker.github.io/cmder/)
