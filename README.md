@@ -49,10 +49,10 @@ $ cd ~/Users/user
 $ sudo chown -R $(whoami) .npm
 ```
 
-### Install Sass
+### Install Compass & Sass
 
 ```
-$ gem install sass
+$ gem install compass
 ```
 
 If you find your css build results are empty, update your sass gem.
