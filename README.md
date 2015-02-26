@@ -1,4 +1,4 @@
-# generator-dataminr-react-flux
+# generator-react-flux
 
 > [Yeoman](http://yeoman.io) generator for Facebook's React framework and Flux application architecture.
 
