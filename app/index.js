@@ -26,54 +26,11 @@ var DataminrReactGenerator = yeoman.generators.Base.extend({
                 message: 'What is this project\'s name?'
             }
         ];
-//            {
-//                type: 'checkbox',
-//                name: 'features',
-//                message: 'What more would you like?',
-//                choices: [{
-//                    name: 'Sass',
-//                    value: 'includeSass',
-//                    checked: true
-//                }, {
-//                    name: 'Lodash',
-//                    value: 'includeLodash',
-//                    checked: true
-//                }, {
-//                    name: 'jQuery',
-//                    value: 'includeJQuery',
-//                    checked: true
-//                }, {
-//                    name: 'Moment',
-//                    value: 'includeMoment',
-//                    checked: true
-//                }, {
-//                    name: 'd3',
-//                    value: 'includeD3',
-//                    checked: true
-//                }, {
-//                    name: 'Jasmine for unit tests with Istanbul code coverage',
-//                    value: 'includeJasmine',
-//                    checked: true
-//                }]
-//            }];
 
         this.prompt(prompts, function (answers) {
             var features = answers.features;
 
             this.projectName = answers.project || 'app';
-
-//            function hasFeature(feat) {
-//                return features.indexOf(feat) !== -1;
-//            }
-
-            // manually deal with the response, get back and store the results.
-            // we change a bit this way of doing to automatically do this in the self.prompt() method.
-//            this.includeSass = hasFeature('includeSass');
-//            this.includeLodash = hasFeature('includeLodash');
-//            this.includeJQuery = hasFeature('includeJQuery');
-//            this.includeMoment = hasFeature('includeMoment');
-//            this.includeD3 = hasFeature('includeD3');
-//            this.includeJasmine = hasFeature('includeJasmine');
 
             done();
         }.bind(this));
