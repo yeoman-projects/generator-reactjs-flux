@@ -1,4 +1,4 @@
-# generator-react-flux
+# generator-reactjs-flux
 
 > [Yeoman](http://yeoman.io) generator for Facebook's React framework and Flux application architecture.
 
@@ -30,7 +30,7 @@ or PowerShell to improve the experience.
 
 ### Install and use Generators
 
-To install generator-dataminr-react-flux, clone this repo, and run the following command from the root directory:
+To install generator-reactjs-flux, clone this repo, and run the following command from the root directory:
 
 ```
 $ npm link
@@ -40,7 +40,7 @@ Finally, initiate the generator:
 
 ```
 $ cd ~/path/to/project/root
-$ yo react-flux
+$ yo reactjs-flux
 ```
 
 NPM Troubles? npm ERR! Are you seeing something like: `Error: EACCES, mkdir '/Users/user/.npm/dargs/2.1.0'` ?
