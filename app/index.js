@@ -52,7 +52,6 @@ var DataminrReactGenerator = yeoman.generators.Base.extend({
         this.mkdir('bin');
 
         // Root
-        this.copy('.gitignore', '.gitignore');
         this.copy('init.sh', 'init.sh');
 
         // Grunt
