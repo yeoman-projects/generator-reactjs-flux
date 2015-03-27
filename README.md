@@ -30,10 +30,10 @@ or PowerShell to improve the experience.
 
 ### Install and use Generators
 
-To install generator-reactjs-flux, clone this repo, and run the following command from the root directory:
+To install generator-reactjs-flux run the following command:
 
 ```
-$ npm link
+$ npm install generator-reactjs-flux -g
 ```
 
 Finally, initiate the generator:
