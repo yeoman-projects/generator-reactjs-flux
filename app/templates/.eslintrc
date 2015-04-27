@@ -23,5 +23,8 @@
         "indent": [4, 4],
         "no-lonely-if": 2,
         "no-multiple-empty-lines": [2, {"max": 2}]
-    }
+    },
+    "plugins": [
+        "react"
+    ]
 }
