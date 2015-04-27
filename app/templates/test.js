@@ -4,10 +4,10 @@ var connect = require('../node_modules/grunt-contrib-connect/tasks/connect');
 module.exports = function(grunt, options) {
     return { tasks: {
         /**
-         * Jasmine client side JS test tasks
+         * Jasmine client side JS test tasks.
          */
         jasmine: {
-            src: ['app/compiled/**/*.js', '!app/compiled/third-party/*',
+            src: ['app/compiled/**/*.js', '!app/compiled/lib/*',
                 '!app/compiled/main.js', '!app/compiled/**/tests/*.js'],
             options: {
                 specs: ['app/compiled/**/*.test.js'],
@@ -27,11 +27,11 @@ module.exports = function(grunt, options) {
                         requireConfig: {
                             baseUrl: 'app/compiled/',
                             paths: {
+                                flux: '../../../bower_components/flux/dist/Flux',
                                 'jquery': '../../../bower_components/jquery/dist/jquery',
                                 'lodash': '../../../bower_components/lodash/dist/lodash',
                                 'react': '../../../bower_components/react/react-with-addons',
-                                'react-router': '../../../bower_components/react-router/dist/react-router',
-                                'third-party': '../../../app/compiled/third-party',
+                                'react-router': '../../../bower_components/react-router/build/global/ReactRouter.min',
                                 'testUtil': '../../../app/compiled/tests/util'
                             },
                             callback: function () {
@@ -65,59 +65,20 @@ module.exports = function(grunt, options) {
         },
 
         /**
-         * JSHint configuration
+         * ESLint configuration. See http://eslint.org and the .eslintrc file for details.
          */
-        jshint:{
-            options:{
-                newcap: false
-            },
-            src: [
+        eslint:{
+            target: [
                 'app/**/*.js',
-                '!app/js/**/*.js', //We scan the /compiled versions, not the source since JSX hoses things
-                '!app/compiled/third-party/*.js',
-                '!app/compiled/tests/*.js',
+                '!app/compiled/**/*.js',
+                '!app/js/lib/*.js',
+                '!app/js/tests/*.js',
                 '!app/**/*.test.js'
             ]
         },
 
         /**
-         * Javascript Style Checker config
-         */
-        jscs: {
-            src: [
-                'app/**/*.js',
-                '!app/js/**/*.js', //We scan the /compiled versions, not the source since JSX hoses things
-                '!app/compiled/third-party/*.js',
-                '!app/compiled/tests/*.js',
-                '!app/**/*.test.js'
-            ],
-            options: {
-                // http://jscs.info/rules.html
-                disallowEmptyBlocks: true,
-                disallowMixedSpacesAndTabs: true,
-                disallowMultipleLineBreaks: true,
-                disallowMultipleLineStrings: true,
-                disallowPaddingNewlinesInBlocks: true,
-                disallowSpaceAfterObjectKeys: true,
-                disallowSpaceAfterPrefixUnaryOperators: true,
-                disallowSpaceBeforePostfixUnaryOperators: true,
-                disallowSpacesInCallExpression: true,
-                requireBlocksOnNewline: 1,
-                requireCamelCaseOrUpperCaseIdentifiers: true,
-                requireCommaBeforeLineBreak: true,
-                requireDotNotation: true,
-                requireKeywordsOnNewLine: ["elseif", "else"],
-                requireSpaceBeforeBinaryOperators: true,
-                requireSpaceAfterBinaryOperators: true,
-                requireSpaceBetweenArguments: true,
-                requireSpacesInConditionalExpression: true,
-                validateIndentation: 4,
-                validateParameterSeparator: ", "
-            }
-        },
-
-        /**
-         * Static web server. Used to server code coverage result files
+         * Static web server used to server code coverage result files.
          */
         connect: {
             all: {
@@ -130,7 +91,7 @@ module.exports = function(grunt, options) {
         },
 
         /**
-         * Opens users browser to a specific URL
+         * Opens users browser to a specific URL.
          * @type {Object}
          */
         open: {
