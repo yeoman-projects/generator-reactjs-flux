@@ -5,5 +5,5 @@ define(function(require) {
     var React = require('react');
     var Router = require('react-router');
 
-    return <Router.Route name="app" path="/testing-generator/app/index.html" handler={App} />;
+    return <Router.Route name="app" path="/<%= _.slugify(projectName) %>/app/index.html" handler={App} />;
 });
