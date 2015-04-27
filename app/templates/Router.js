@@ -1,4 +1,6 @@
 define(function(require) {
+    'use strict';
+
     var Routes = require('router/Routes');
     var Router = require('react-router');
 

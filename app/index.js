@@ -42,10 +42,10 @@ var DataminrReactGenerator = yeoman.generators.Base.extend({
         this.mkdir('app/js/components');
         this.mkdir('app/js/constants');
         this.mkdir('app/js/dispatcher/tests');
+        this.mkdir('app/js/lib');
         this.mkdir('app/js/router');
         this.mkdir('app/js/stores');
         this.mkdir('app/js/tests');
-        this.mkdir('app/js/third-party');
         this.mkdir('app/js/utils');
         this.mkdir('app/sass');
         this.mkdir('grunt');
@@ -53,16 +53,15 @@ var DataminrReactGenerator = yeoman.generators.Base.extend({
 
         // Root
         this.copy('init.sh', 'init.sh');
+        this.copy('.eslintrc', '.eslintrc');
 
         // Grunt
         this.copy('Gruntfile.js', 'Gruntfile.js');
         this.copy('startup.js', 'grunt/startup.js');
         this.copy('test.js', 'grunt/test.js');
 
-        // Flux
-        this.copy('dispatcher.js', 'app/js/third-party/dispatcher.js');
-        this.copy('invariant.js', 'app/js/third-party/invariant.js');
-        this.copy('eventEmitter.js', 'app/js/third-party/eventEmitter.js');
+        // Event Emitter
+        this.copy('eventEmitter.js', 'app/js/lib/eventEmitter.js');
 
         // App
         this.copy('require.config.js', 'app/require.config.js');
