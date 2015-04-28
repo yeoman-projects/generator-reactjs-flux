@@ -22,7 +22,7 @@
         "no-else-return": 2,
         "indent": [4, 4],
         "no-lonely-if": 2,
-        "no-multiple-empty-lines": [2, {"max": 2}]
+        "no-multiple-empty-lines": [2, {"max": 2}],
 
         "react/jsx-boolean-value": 1,
         "react/jsx-quotes": 1,
