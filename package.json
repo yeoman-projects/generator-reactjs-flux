@@ -1,6 +1,6 @@
 {
   "name": "generator-reactjs-flux",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "React, Flux, Sass, Require, Grunt, Jasmine, Istanbul, JSHint and JSCS all wired up and ready to go.",
   "keywords": [
     "yeoman-generator"
