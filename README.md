@@ -6,14 +6,13 @@
 
 * [React](http://facebook.github.io/react/) JavaScript library for building user interfaces
 * [Flux](https://facebook.github.io/flux/) Application architecture for building user interfaces
+* [ESLint](http://eslint.org/) The pluggable linting utility for JavaScript and JSX
 * [Compass](http://compass-style.org/) Css authoring framework
 * [Sass](http://sass-lang.com/) CSS with superpowers
 * [Require](http://requirejs.org/) JavaScript file and module loader optimized for in-browser use
 * [Grunt](http://gruntjs.com/) JavaScript task runner for performing repetitive tasks like minification, compilation, unit testing, linting, etc
 * [Jasmine](http://jasmine.github.io/2.2/introduction.html) Behavior-driven development framework for testing JavaScript code
 * [Istanbul](https://github.com/gotwarlost/istanbul) JavaScript statement, line, function, and branch code coverage when running unit tests
-* [JSHint](http://jshint.com/) Detect errors and potential problems in JavaScript code and enforce your team's coding conventions
-* [JSCS](http://jscs.info/) JavaScript Code Style checker
 * [Watch](https://github.com/gruntjs/grunt-contrib-watch) Automated [JSX](http://facebook.github.io/react/docs/jsx-in-depth.html)
 and [Sass](http://sass-lang.com/) compilation when watched file patterns are added, changed, or deleted
 
