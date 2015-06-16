@@ -85,6 +85,18 @@ Same as grunt test, however, this task will run code coverage and launch the cod
 $ grunt test:cov
 ```
 
+Run unit tests in the browser on actual source rather than instrumented files from istanbul.
+
+```
+$ grunt jasmineDebug --filter {/folder|file}
+```
+
+Run unit tests for a filtered set of folders or files without code coverage thresholds.
+
+```
+$ grunt jasmineFilter --filter {/folder|file}
+```
+
 ## License
 
 MIT

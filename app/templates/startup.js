@@ -1,6 +1,10 @@
 'use strict';
 
 module.exports.tasks = {
+    /**
+     * Compass compile task. Compiles everything under the app/sass
+     * directory into a single file in dist
+     */
     compass: {
         dist: {
             options: {
@@ -11,6 +15,9 @@ module.exports.tasks = {
         }
     },
 
+    /**
+     * File watcher for Sass compile step. Automatically rebuilds sass on change.
+     */
     watch: {
         scripts: {
             files: ['app/sass/**/*.scss'],
@@ -20,38 +27,18 @@ module.exports.tasks = {
 
     shell: {
         cleanCompiledDirectory: {
-            command: 'rm -rf app/compiled',
-            options: {
-                async: true
-            }
-        },
-        compassWatcher: {
-            command: 'grunt compass && grunt watch',
-            options: {
-                async: true
-            }
+            command: 'rm -rf app/compiled'
         },
         init: {
-            command: './init.sh',
-            options: {
-                async: false
-            }
+            command: './init.sh'
         },
         jsxCompile: {
-            command: 'jsx app/js/ app/compiled/',
-            options: {
-                async: false
-            }
+            command: 'jsx app/js/ app/compiled/'
         },
         jsxWatcher: {
             command: 'jsx --watch app/js/ app/compiled/',
             options: {
                 async: false
-            }
-        },
-        options: {
-            execOptions: {
-                detached: true
             }
         }
     }

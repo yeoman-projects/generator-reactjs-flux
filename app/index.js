@@ -40,13 +40,10 @@ var DataminrReactGenerator = yeoman.generators.Base.extend({
         // Folders
         this.mkdir('app/js/actions');
         this.mkdir('app/js/components');
-        this.mkdir('app/js/constants');
         this.mkdir('app/js/dispatcher/tests');
         this.mkdir('app/js/lib');
-        this.mkdir('app/js/router');
         this.mkdir('app/js/stores');
         this.mkdir('app/js/tests');
-        this.mkdir('app/js/utils');
         this.mkdir('app/sass');
         this.mkdir('grunt');
         this.mkdir('bin');
@@ -68,18 +65,11 @@ var DataminrReactGenerator = yeoman.generators.Base.extend({
         this.copy('index.html', 'app/index.html');
         this.copy('main.js', 'app/js/main.js');
         this.copy('app.scss', 'app/sass/app.scss');
-        this.copy('App.js', 'app/js/components/App.js');
         this.copy('AppDispatcher.js', 'app/js/dispatcher/AppDispatcher.js');
-
-        // Router
-        this.copy('Router.js', 'app/js/router/Router.js');
-        this.copy('Routes.js', 'app/js/router/Routes.js');
-        this.copy('reactRouterShim.js', 'app/js/utils/reactRouterShim.js');
 
         // Testing
         this.copy('bind-polyfill.js', 'app/js/tests/bind-polyfill.js');
         this.copy('mock-ajax.js', 'app/js/tests/mock-ajax.js');
-        this.copy('util.js', 'app/js/tests/util.js');
         this.copy('coverage.html', 'bin/index.html');
 
         // Tests
