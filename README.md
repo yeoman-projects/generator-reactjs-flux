@@ -24,9 +24,6 @@ and [Sass](http://sass-lang.com/) compilation when watched file patterns are add
 $ npm install -g yo grunt-cli react-tools
 ```
 
-On Windows, we suggest you use an improved command line tool such as [cmder](http://bliker.github.io/cmder/)
-or PowerShell to improve the experience.
-
 ### Install and use Generators
 
 To install generator-reactjs-flux run the following command:
