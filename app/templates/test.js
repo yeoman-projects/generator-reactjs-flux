@@ -10,7 +10,7 @@ var jasmineConfig = {
     requireConfigFile: 'app/require.config.js',
     compiledDir: 'app/compiled/',
     paths: {
-        ExpandedTestUtils: '../../bower_components/expanded-react-test-utils/dist/ExpandedTestUtils.min'
+        ExpandedTestUtils: '../../bower_components/expanded-react-test-utils/dist/ExpandedTestUtils'
     }
 };
 

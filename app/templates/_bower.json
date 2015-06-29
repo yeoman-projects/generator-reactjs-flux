@@ -2,7 +2,7 @@
     "name": "<%= _.slugify(projectName) %>",
     "version": "0.0.1",
     "devDependencies": {
-        "expanded-react-test-utils": "0.1.0",
+        "expanded-react-test-utils": "0.2.0",
         "jasmine-expect": "1.22.3"
     },
     "dependencies": {
